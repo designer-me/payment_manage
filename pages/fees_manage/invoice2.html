@@ -3,18 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Payment Management</title>
+  <title>Payment Managment System</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
-  <!-- summernote -->
-  <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -28,11 +25,9 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="../../index3.html" class="nav-link">Home</a>
+        <a href="../../index2.html" class="nav-link">Home</a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
+   
     </ul>
 
     <!-- SEARCH FORM -->
@@ -143,27 +138,26 @@
   </nav>
   <!-- /.navbar -->
 
-
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-<!--
-      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+    <a href="../../index3.html" class="brand-link">
+      <img src="../../dist/img/AdminLTELogo.png"
+           alt="AdminLTE Logo"
+           class="brand-image img-circle elevation-3"
            style="opacity: .8">
--->
-      <span class="brand-text font-weight-light">Payment Management</span>
+      <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
-<!--       Sidebar user panel (optional) -->
+      <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Admin Name</a>
+          <a href="#" class="d-block">Alexander Pierce</a>
         </div>
       </div>
 
@@ -173,7 +167,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+            <a href="../../index2.html" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -262,11 +256,11 @@
                 </a>
               </li>
        
-    
+           
             </ul>
           </li>
        <li class="nav-item">
-                <a href="pages/customerManagement/invoice.html" class="nav-link">
+                <a href="#" class="nav-link">
 <i class="nav-icon fas fa-table"></i>
                   <p>Invoice</p>
                 </a>
@@ -292,19 +286,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="mailbox.html" class="nav-link">
+                <a href="../mailbox/mailbox.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inbox</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="compose.html" class="nav-link">
+                <a href="../mailbox/compose.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Compose</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="read-mail.html" class="nav-link">
+                <a href="../mailbox/read-mail.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Read</p>
                 </a>
@@ -319,6 +313,7 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -326,208 +321,190 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Compose</h1>
+            <h1>Invoice</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Compose</li>
+              <li class="breadcrumb-item active">Invoice</li>
             </ol>
           </div>
         </div>
       </div><!-- /.container-fluid -->
     </section>
 
-    <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3">
-            <a href="mailbox.html" class="btn btn-primary btn-block mb-3">Back to Inbox</a>
-
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Folders</h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="card-body p-0">
-                <ul class="nav nav-pills flex-column">
-                  <li class="nav-item active">
-                    <a href="#" class="nav-link">
-                      <i class="fas fa-inbox"></i> Inbox
-                      <span class="badge bg-primary float-right">12</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-envelope"></i> Sent
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-file-alt"></i> Drafts
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fas fa-filter"></i> Junk
-                      <span class="badge bg-warning float-right">65</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-trash-alt"></i> Trash
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!-- /.card-body -->
+          <div class="col-12">
+            <div class="callout callout-info">
+              <h5><i class="fas fa-info"></i> Note:</h5>
+              This page has been enhanced for printing. Click the print button at the bottom of the invoice to test.
             </div>
-            <!-- /.card -->
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Labels</h3>
 
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
-                  </button>
+
+            <!-- Main content -->
+            <div class="invoice p-3 mb-3">
+              <!-- title row -->
+              <div class="row">
+                <div class="col-12">
+                  <h4>
+                    <i class="fas fa-globe"></i> Fees management system,
+                    <small class="float-right">Date: 2/10/2014</small>
+                  </h4>
                 </div>
+                <!-- /.col -->
               </div>
-              <!-- /.card-header -->
-              <div class="card-body p-0">
-                <ul class="nav nav-pills flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="far fa-circle text-danger"></i> Important</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="far fa-circle text-warning"></i> Promotions</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="far fa-circle text-primary"></i> Social</a>
-                  </li>
-                </ul>
+              <!-- info row -->
+              <div class="row invoice-info">
+                <div class="col-sm-4 invoice-col">
+                  From
+                  <address>
+                    <strong>Company Name.</strong><br>
+                    795 Folsom Ave, Suite 600<br>
+                    San Francisco, CA 94107<br>
+                    Phone: (804) 123-5432<br>
+                    Email: info@almasaeedstudio.com
+                  </address>
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-4 invoice-col">
+                  To
+                  <address>
+                    <strong>John Doe</strong><br>
+                    795 Folsom Ave, Suite 600<br>
+                    San Francisco, CA 94107<br>
+                    Phone: (555) 539-1037<br>
+                    Email: john.doe@example.com
+                  </address>
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-4 invoice-col">
+                  <b>Invoice #007612</b><br>
+                  <br>
+                  <b>Order ID:</b> 4F3S8J<br>
+                  <b>Payment Due:</b> 2/22/2014<br>
+                  <b>Account:</b> 968-34567
+                </div>
+                <!-- /.col -->
               </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
-          <div class="col-md-9">
-            <div class="card card-primary card-outline">
-              <div class="card-header">
-                <h3 class="card-title">Compose New Message</h3>
-                               <div class="container">
-    <div class="row">
-    <div class="col-md-3">
-         <div class="input-group input-group-sm">
-           
-                       <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
-                    <option selected="selected">Roll No.</option>
-                    <option>All</option>
-                    <option>1</option>
-                   
+              <!-- /.row -->
+
+              <!-- Table row -->
+              <div class="row">
+                <div class="col-12 table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                    <tr>
+                      <th>Student Name</th>
+                      <th>Class</th>
+                      <th>Month</th>
+                      <th>Price</th>
+                      <th>Amount</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td><input type="text"/></td>
+                      <td><input type="text"/></td>
+                        <td>       <div class="form-group">
+                 
+                  <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+                    <option selected="selected">Januray</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                      <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option> 
+                    <option>December</option>
                   </select>
-        
-               
-        </div>
-    </div>   
-    <div class="col-md-3">
-           <div class="input-group input-group-sm">
-        <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
-                      <option selected="selected">Student</option>
-                    <option>All</option>
-                    <option>Student Name</option>
-                  </select>
+                         
+                </div></td>
+                      <td><input type="text"/></td>
+                      <td><input type="text"/></td>
+                     <td><input type="text"/></td>
+                    </tr>
+              
          
-        </div>
-    </div> 
-    <div class="col-md-3">
-         <div class="input-group input-group-sm">
-          <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
-                     <option selected="selected">Class</option>
-                    <option>All</option>
-                    <option>Class</option>
-                  </select>
-        
-        </div>  
-    </div>
-  
-</div>                
-</div>
+              
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.col -->
               </div>
-                
-              <!-- /.card-header -->
-              <div class="card-body">
-                <div class="form-group">
-                  <input class="form-control" placeholder="To:">
+              <!-- /.row -->
+
+              <div class="row">
+                <!-- accepted payments column -->
+                <div class="col-6">
+                  <p class="lead">Payment Methods:</p>
+                  <img src="../../dist/img/credit/visa.png" alt="Visa">
+                  <img src="../../dist/img/credit/mastercard.png" alt="Mastercard">
+                  <img src="../../dist/img/credit/american-express.png" alt="American Express">
+                  <img src="../../dist/img/credit/paypal2.png" alt="Paypal">
+
+                  <p class="text-muted well well-sm shadow-none" style="margin-top: 10px;">
+                   
+                  </p>
                 </div>
-                <div class="form-group">
-                  <input class="form-control" placeholder="Subject:">
-                </div>
-                <div class="form-group">
-                    <textarea id="compose-textarea" class="form-control" style="height: 300px">
-                      <h1><u>Heading Of Message</u></h1>
-                      <h4>Subheading</h4>
-                      <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
-                        was born and I will give you a complete account of the system, and expound the actual teachings
-                        of the great explorer of the truth, the master-builder of human happiness. No one rejects,
-                        dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know
-                        how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again
-                        is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain,
-                        but because occasionally circumstances occur in which toil and pain can procure him some great
-                        pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise,
-                        except to obtain some advantage from it? But who has any right to find fault with a man who
-                        chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
-                        produces no resultant pleasure? On the other hand, we denounce with righteous indignation and
-                        dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so
-                        blinded by desire, that they cannot foresee</p>
-                      <ul>
-                        <li>List item one</li>
-                        <li>List item two</li>
-                        <li>List item three</li>
-                        <li>List item four</li>
-                      </ul>
-                      <p>Thank you,</p>
-                      <p>John Doe</p>
-                    </textarea>
-                </div>
-                <div class="form-group">
-                  <div class="btn btn-default btn-file">
-                    <i class="fas fa-paperclip"></i> Attachment
-                    <input type="file" name="attachment">
+                <!-- /.col -->
+                <div class="col-6">
+                  <p class="lead">Amount Due 2/22/2014</p>
+
+                  <div class="table-responsive">
+                    <table class="table">
+                      <tr>
+                        <th style="width:50%">Subtotal:</th>
+                            <td><input type="text"/></td>
+                      </tr>
+                      <tr>
+                        <th>Tax (9.3%)</th>
+                      <td><input type="text"/></td>
+                      </tr>
+                 
+                      <tr>
+                        <th>Total:</th>
+                           <td><input type="text"/></td>
+                      </tr>
+                    </table>
                   </div>
-                  <p class="help-block">Max. 32MB</p>
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+
+              <!-- this row will not appear when printing -->
+              <div class="row no-print">
+                <div class="col-12">
+                  <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fas fa-print"></i> Print</a>
+                  <button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Submit
+                    Payment
+                  </button>
+                  <button type="button" class="btn btn-primary float-right" style="margin-right: 5px;">
+                    <i class="fas fa-download"></i> Generate PDF
+                  </button>
                 </div>
               </div>
-              <!-- /.card-body -->
-              <div class="card-footer">
-                <div class="float-right">
-                  <button type="button" class="btn btn-default"><i class="fas fa-pencil-alt"></i> Draft</button>
-                  <button type="submit" class="btn btn-primary"><i class="far fa-envelope"></i> Send</button>
-                </div>
-                <button type="reset" class="btn btn-default"><i class="fas fa-times"></i> Discard</button>
-              </div>
-              <!-- /.card-footer -->
             </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
+            <!-- /.invoice -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
+  <footer class="main-footer no-print">
     <div class="float-right d-none d-sm-block">
    
     </div>
-    <strong>Copyright &copy; <a href="#">Skyevo.in</a>.</strong> All rights
+    <strong>Copyright &copy; <a href="#">Payment Management System</a>.</strong> All rights
     reserved.
   </footer>
 
@@ -547,14 +524,5 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-<!-- Summernote -->
-<script src="../../plugins/summernote/summernote-bs4.min.js"></script>
-<!-- Page Script -->
-<script>
-  $(function () {
-    //Add text editor
-    $('#compose-textarea').summernote()
-  })
-</script>
 </body>
 </html>

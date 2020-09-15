@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Payment Management</title>
+  <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>Fee Management System</title>
-
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-      <!-- IonIcons -->
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <style>
+        legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+fieldset{
+  border: 1px solid rgb(255,232,57);
+  width: 95%;
+  margin: 0 auto;
+    margin-top: 10px;
+
+}
+    </style>
 </head>
-<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<body class="hold-transition sidebar-mini">
 <div class="wrapper">
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -28,7 +48,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
+        <a href="../../index3.html" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -59,7 +79,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Brad Diesel
@@ -75,7 +95,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   John Pierce
@@ -91,7 +111,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Nora Silvester
@@ -135,12 +155,15 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button"><i
-            class="fas fa-th-large"></i></a>
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
       </li>
     </ul>
   </nav>
   <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -150,7 +173,7 @@
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
 -->
-      <span class="brand-text font-weight-light">Fees Management</span>
+      <span class="brand-text font-weight-light">Payment Management</span>
     </a>
 
     <!-- Sidebar -->
@@ -166,6 +189,7 @@
       </div>
 
       <!-- Sidebar Menu -->
+       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
@@ -268,39 +292,13 @@
         
            
             </ul>
-          </li>  
-            <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
-              <p>
-            Bill
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/fees_manage/addfeetype.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add fees Type </p>
-                </a>
-              </li>   
-                <li class="nav-item">
-                <a href="pages/fees_manage/feesmaster.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fees Master </p>
-                </a>
-              </li>            
-                <li class="nav-item">
-                <a href="pages/fees_manage/feesdiscount.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dsicount Fees </p>
-                </a>
-              </li>
-        
-           
-            </ul>
           </li>
-      
+       <li class="nav-item">
+                <a href="pages/fees_manage/fees.html" class="nav-link">
+<i class="nav-icon fas fa-table"></i>
+                  <p>Fees</p>
+                </a>
+              </li>     
             <li class="nav-item">
                 <a href="pages/fees_manage/invoice.html" class="nav-link">
 <i class="nav-icon fas fa-table"></i>
@@ -325,71 +323,12 @@
               </p>
             </a>
           </li>
-                    
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-envelope"></i>
-              <p>
-        Payment Report
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-             <li class="nav-item">
-                <a href="pages/fees_manage/report.html" class="nav-link">
-                 <i class="nav-icon fas fa-table"></i>
-                  <p>Daybook</p>
-                </a>
-              </li>    
-                <li class="nav-item">
-                <a href="pages/fees_manage/report.html" class="nav-link">
-                 <i class="nav-icon fas fa-table"></i>
-                  <p>Fees Statement</p>
-                </a>   
-                    <a href="pages/fees_manage/fees.html" class="nav-link">
-                 <i class="nav-icon fas fa-table"></i>
-                  <p>Balance</p>
-                </a>
-              </li> 
-
-      
-            </ul>
-          </li>      
-            <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-envelope"></i>
-              <p>
-    Invoice
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-             <li class="nav-item">
-                <a href="pages/fees_manage/studentfees4.html" class="nav-link">
-                 <i class="nav-icon fas fa-table"></i>
-                  <p>Genrate</p>
-                </a>
-              </li>    
-                <li class="nav-item">
-                <a href="pages/fees_manage/studentfees3.html" class="nav-link">
-                 <i class="nav-icon fas fa-table"></i>
-                  <p>Fees Statement</p>
-                </a>   
-                    <a href="pages/fees_manage/fees.html" class="nav-link">
-                 <i class="nav-icon fas fa-table"></i>
-                  <p>Balance</p>
-                </a>
-              </li> 
-
-      
-            </ul>
-          </li>     
         
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-envelope"></i>
               <p>
-           Feedback
+                Mailbox
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -397,7 +336,7 @@
               <li class="nav-item">
                 <a href="pages/mailbox/mailbox.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>All Feedback</p>
+                  <p>Inbox</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -409,36 +348,7 @@
               <li class="nav-item">
                 <a href="pages/mailbox/read-mail.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Read Feedback</p>
-                </a>
-              </li>
-            </ul>
-          </li>       
-            <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-envelope"></i>
-              <p>
-               Notice
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/mailbox/mailbox.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>All Notice</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/mailbox/compose.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Compose</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/mailbox/read-mail.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Read Notice</p>
+                  <p>Read</p>
                 </a>
               </li>
             </ul>
@@ -457,224 +367,244 @@
     <!-- /.sidebar -->
   </aside>
 
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <div class="content-header">
+    <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Fees Management System</h1>
-          </div><!-- /.col -->
+            <h1>Add Student</h1>
+          </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active"></li>
+              <li class="breadcrumb-item active">Add Student</li>
             </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
+          </div>
+        </div>
       </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
+    </section>
 
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <!-- Info boxes -->
-    <div class="row">
-          <div class="col-lg-3 col-6">
-            <!-- small card -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>150</h3>
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- jquery validation -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Add Student<small></small></h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              
+                    
+              <form role="form" id="quickForm">
+                    <fieldset>
+                <div class="card-body">
+       <legend>Personal information</legend>
+              
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Name*</label>
+                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder=" Name">
+                  </div>  
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Father Name*</label>
+                    <input type="text" name="Father Name" class="form-control" id="exampleInputEmail1" placeholder="Father Name">
+                  </div>  
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Mother Name</label>
+                    <input type="text" name="Mother Name" class="form-control" id="exampleInputEmail1" placeholder="Mother Name">
+                  </div>       
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Date of birth*</label>
+                    <input type="date" name="date" class="form-control" id="exampleInputEmail1" placeholder="Date of birth">
+                  </div>  
+              
 
-                <p>Students</p>
-              </div>
-              <div class="icon">
-             <i class="fas fa-user-graduate"></i>
-              </div>
-              <a href="#" class="small-box-footer">
-                More info <i class="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small card -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>53<sup style="font-size: 20px">%</sup></h3>
+                  
+             
+                <!-- /.form-group -->
+              </div>           
+     </fieldset>                 
+                  <fieldset>
+                <div class="card-body">
+  
+              
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Admission No*</label>
+                    <input type="text" name="Admission No" class="form-control" id="exampleInputEmail1" placeholder="Admission No">
+                  </div>  
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Roll No.*</label>
+                    <input type="text" name="Roll No" class="form-control" id="exampleInputEmail1" placeholder="Roll No">
+                  </div>  
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Contact No.*</label>
+                    <input type="text" name="number" class="form-control" id="exampleInputEmail1" placeholder="Contact No">
+                  </div>       
+                         <div class="form-group">
+                  <label>Class*</label>
+                  <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+                    <option selected="selected">1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>      
+                    <option>8</option>      
+                    <option>9</option>  
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                </div>
+                   
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Admission Date</label>
+                    <input type="Date" name="Date" class="form-control" id="exampleInputEmail1" placeholder="Admission Date">
+                  </div>  
 
-                <p>Class</p>
-              </div>
-              <div class="icon">
-          <i class="fas fa-university"></i>
-              </div>
-              <a href="#" class="small-box-footer">
-                More info <i class="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small card -->
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>44000</h3>
+                <!-- /.form-group -->
+              </div>           
+     </fieldset>
+                <!-- /.card-body -->
+                                   <fieldset>
+                <div class="card-body">
+       <legend>Fee information</legend>
+              
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Total Fees*</label>
+                    <input type="text" name="text" class="form-control" id="exampleInputEmail1" placeholder="Total Fees">
+                  </div>  
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Advance Fee*</label>
+                    <input type="text" name="text" class="form-control" id="exampleInputEmail1" placeholder="Advance Fee">
+                  </div>  
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Balance</label>
+                    <input type="text" name="Text" class="form-control" id="exampleInputEmail1" placeholder="Balance">
+                  </div>       
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Fee Remark</label>
+                    <input type="text" name="text" class="form-control" id="exampleInputEmail1" placeholder="Fee Remark">
+                  </div>  
+              
 
-                <p>Total Fees</p>
-              </div>
-              <div class="icon">
-              <i class="fas fa-rupee-sign"></i>
-              </div>
-              <a href="#" class="small-box-footer">
-                More info <i class="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small card -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>65</h3>
+                  
+             
+                <!-- /.form-group -->
+              </div>           
+     </fieldset>                       
+                  <fieldset>
+                <div class="card-body">
+       <legend>Optional information</legend>
+              
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Student Address*</label>
+                    <input type="text" name="text" class="form-control" id="exampleInputEmail1" placeholder="Student Address">
+                  </div>  
 
-                <p>Transaction</p>
-              </div>
-              <div class="icon">
-              <i class="fas fa-rupee-sign"></i>
-              </div>
-              <a href="#" class="small-box-footer">
-                More info <i class="fas fa-arrow-circle-right"></i>
-              </a>
+                <!-- /.form-group -->
+              </div>           
+     </fieldset> 
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+                    </form>
             </div>
-          </div>
-          <!-- ./col -->
-        </div>  
-          <div class="row">
-          <div class="col-lg-3 col-6">
-            <!-- small card -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>150</h3>
+            <!-- /.card -->
+            </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+          <div class="col-md-6">
 
-                <p>Reports</p>
-              </div>
-              <div class="icon">
-            <i class="far fa-sticky-note"></i>
-              </div>
-              <a href="#" class="small-box-footer">
-                More info <i class="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
           </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small card -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-                <p>TC Generate</p>
-              </div>
-              <div class="icon">
-       <i class="far fa-sticky-note"></i>
-              </div>
-              <a href="#" class="small-box-footer">
-                More info <i class="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small card -->
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>44</h3>
-
-                <p>Custom TC</p>
-              </div>
-              <div class="icon">
-            <i class="far fa-sticky-note"></i>
-              </div>
-              <a href="#" class="small-box-footer">
-                More info <i class="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small card -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>65</h3>
-
-                  <p>Print All</p></div>
-              <div class="icon">
-              <i class="far fa-sticky-note"></i>
-              </div>
-              <a href="#" class="small-box-footer">
-                More info <i class="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
-          </div>
-          <!-- ./col -->
+          <!--/.col (right) -->
         </div>
         <!-- /.row -->
-
-        <!-- /.row -->
-
-        <!-- Main row -->
-          <!-- /.col-md-6 -->
-      
-        <!-- /.row -->
-      </div><!--/. container-fluid -->
+      </div><!-- /.container-fluid -->
+          
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+
+    </div>
+    <strong>Copyright &copy; <a href="http://adminlte.io">Skyevo.in </a>.</strong> All rights
+    reserved.
+  </footer>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
   </aside>
   <!-- /.control-sidebar -->
-
-  <!-- Main Footer -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; <a href="http://adminlte.io">Skyevo.in</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-<!--      <b>Version</b> 3.0.5-->
-    </div>
-  </footer>
 </div>
 <!-- ./wrapper -->
 
-<!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- overlayScrollbars -->
-<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- jquery-validation -->
+<script src="../../plugins/jquery-validation/jquery.validate.min.js"></script>
+<script src="../../plugins/jquery-validation/additional-methods.min.js"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/adminlte.js"></script>
-
-<!-- OPTIONAL SCRIPTS -->
-<script src="dist/js/demo.js"></script>
-
-<!-- PAGE PLUGINS -->
-<!-- jQuery Mapael -->
-<script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
-<script src="plugins/raphael/raphael.min.js"></script>
-<script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
-<script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
-<!-- ChartJS -->
-<script src="plugins/chart.js/Chart.min.js"></script>
-
-<!-- PAGE SCRIPTS -->
-<script src="dist/js/pages/dashboard2.js"></script>
-    <script src="dist/js/pages/dashboard3.js"></script>
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+  $.validator.setDefaults({
+    submitHandler: function () {
+      alert( "Form successful submitted!" );
+    }
+  });
+  $('#quickForm').validate({
+    rules: {
+      email: {
+        required: true,
+        email: true,
+      },
+      password: {
+        required: true,
+        minlength: 5
+      },
+      terms: {
+        required: true
+      },
+    },
+    messages: {
+      email: {
+        required: "Please enter a email address",
+        email: "Please enter a vaild email address"
+      },
+      password: {
+        required: "Please provide a password",
+        minlength: "Your password must be at least 5 characters long"
+      },
+      terms: "Please accept our terms"
+    },
+    errorElement: 'span',
+    errorPlacement: function (error, element) {
+      error.addClass('invalid-feedback');
+      element.closest('.form-group').append(error);
+    },
+    highlight: function (element, errorClass, validClass) {
+      $(element).addClass('is-invalid');
+    },
+    unhighlight: function (element, errorClass, validClass) {
+      $(element).removeClass('is-invalid');
+    }
+  });
+});
+</script>
 </body>
 </html>

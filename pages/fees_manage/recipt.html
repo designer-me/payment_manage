@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Payment Management System</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <style>
+    .invoice {
+    padding: 30px;
+}
+
+.invoice h2 {
+	margin-top: 0px;
+	line-height: 0.8em;
+}
+
+.invoice .small {
+	font-weight: 300;
+}
+
+.invoice hr {
+	margin-top: 10px;
+	border-color: #ddd;
+}
+
+.invoice .table tr.line {
+	border-bottom: 1px solid #ccc;
+}
+
+.invoice .table td {
+	border: none;
+}
+
+.invoice .identity {
+	margin-top: 10px;
+	font-size: 1.1em;
+	font-weight: 300;
+}
+
+.invoice .identity strong {
+	font-weight: 600;
+}
+
+
+.grid {
+    position: relative;
+	width: 100%;
+	background: #fff;
+	color: #666666;
+	border-radius: 2px;
+	margin-bottom: 25px;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+                          
+    
+    </style>
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+ <div class="container">
+<div class="row">
+    				<!-- BEGIN INVOICE -->
+					<div class="col-md-12">
+						<div class="grid invoice">
+							<div class="grid-body">
+								<div class="invoice-title">
+									<div class="row">
+										<div class="col-xs-12">
+											<img src="" alt="" height="35">
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="col-xs-12">
+											<h2>invoice<br>
+											<span class="small">order #1082</span></h2>
+										</div>
+									</div>
+								</div>
+								<hr>
+							<div class="row">
+                                    <div class="col-md-6">
+                                 Student Copy
+                                        	<address>
+									
+											Payment,<br>
+											Lucknow<br>
+											226017<br>
+											<abbr title="Phone">P:</abbr> (123) 456-7890
+										</address>
+                                    </div>
+									<div class="col-md-6 text-right identity">
+										<p><br><strong>GPS Bhilal</strong></p>
+                                        <address>
+                                        <p>123456 <i class="fas fa-phone"></i><br>
+                                        Lucknow <i class="fas fa-location-arrow"></i></p>
+                                        <p>Balance Amount:50000</p></address>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 text-right">
+										<address>
+											<strong>Order Date:</strong><br>
+											17/06/14
+										</address>
+									</div>
+								</div>
+								<div class="row">
+									
+										<h3>Description</h3>
+										<table class="table table-striped">
+											<thead>
+												<tr class="line">
+												
+													<td class="text-right"><strong>#</strong></td>
+                                                    <td class="text-right"><strong>Description</strong></td>	
+                                                    <td class="text-right"><strong>Amount</strong></td>
+												</tr>
+											</thead>
+											<tbody>
+												
+										
+												<tr class="line">
+                                                    <td>1</td>
+														<td>April</td>
+												
+													<td class="text-right">5000</td>
+												</tr>
+									
+								
+											</tbody>
+										</table>
+									</div>									
+								</div>
+								<div class="row">
+                                    <div class="col-md-6">
+                                   <strong>Date:</strong> 21-7-2020
+                                    </div>
+									<div class="col-md-6 text-right identity">
+										<p><br><strong>Signature</strong></p>
+									</div>
+								</div>
+                            <hr>
+                            	<div class="row">
+                                    <div class="col-md-6">
+                                 Student Copy
+                                        	<address>
+									
+											Payment,<br>
+											Lucknow<br>
+											226017<br>
+											<abbr title="Phone">P:</abbr> (123) 456-7890
+										</address>
+                                    </div>
+									<div class="col-md-6 text-right identity">
+										<p><br><strong>GPS Bhilal</strong></p>
+                                        <address>
+                                        <p>123456 <i class="fas fa-phone"></i><br>
+                                        Lucknow <i class="fas fa-location-arrow"></i></p>
+                                        <p>Balance Amount:50000</p></address>
+									</div>
+								</div>
+                            <div class="row">
+									
+										<h3>Description</h3>
+										<table class="table table-striped">
+											<thead>
+												<tr class="line">
+												
+													<td class="text-right"><strong>#</strong></td>
+                                                    <td class="text-right"><strong>Description</strong></td>	
+                                                    <td class="text-right"><strong>Amount</strong></td>
+												</tr>
+											</thead>
+											<tbody>
+												
+										
+												<tr class="line">
+                                                    <td>1</td>
+														<td>April</td>
+												
+													<td class="text-right">5000</td>
+												</tr>
+									
+								
+											</tbody>
+										</table>
+                                
+									</div>	
+                            	<div class="row">
+                                    <div class="col-md-6">
+                                   <strong>Date:</strong> 21-7-2020
+                                    </div>
+									<div class="col-md-6 text-right identity">
+										<p><br><strong>Signature</strong></p>
+									</div>
+								</div>
+                             <a href="recipt.html" onclick="window.print()" target="_blank" class="btn btn-default"><i class="fas fa-print"></i> Print</a>
+							</div>
+                        
+						</div>
+			
+					<!-- END INVOICE -->
+				</div>
+</div>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+    });
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+</body>
+</html>

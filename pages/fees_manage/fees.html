@@ -3,20 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Payment Management</title>
+  <title>Payment Management System</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css">
+      <script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+     <script src="jquery.table2excel.js"></script>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
-  <!-- summernote -->
-  <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href= "https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap.min.css">
+<link href= "https://cdn.datatables.net/buttons/1.6.2/css/buttons.bootstrap.min.css">
+<link href= "https://cdn.datatables.net/buttons/1.6.2/css/buttons.bootstrap.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -143,6 +150,7 @@
   </nav>
   <!-- /.navbar -->
 
+  <!-- Main Sidebar Container -->
 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -173,7 +181,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+            <a href="../../index2.html" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -214,36 +222,37 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../customerManagement/area.html" class="nav-link">
+                <a href="area.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Area</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../customerManagement/hawker.html" class="nav-link">
+                <a href="hawker.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Hawker Name</p>
+                  <p>Hawker Details</p>
                 </a>
-                      <li class="nav-item">
-                <a href="../customerManagement/view_hawker.html" class="nav-link">
+
+              </li>    
+                <li class="nav-item">
+                <a href="view_hawker.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>View Hawker Details</p>
                 </a>
 
               </li>
-              
               <li class="nav-item">
-                <a href="../customerManagement/customer.html" class="nav-link">
+                <a href="customer.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add Customer</p>
                 </a>
               </li>
-                 <li class="nav-item">
-                  <a href="../customerManagement/record.html" class="nav-link">
+              <li class="nav-item">
+                <a href="record.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Record</p>
                 </a>
-                </li>
+              </li>
             </ul>
           </li>
           <li class="nav-item has-treeview">
@@ -256,17 +265,17 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../customerManagement/daybook.html" class="nav-link">
+                <a href="daybook.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Day Book</p>
                 </a>
               </li>
-       
-    
+        
+      
             </ul>
           </li>
        <li class="nav-item">
-                <a href="pages/customerManagement/invoice.html" class="nav-link">
+                <a href="invoice.html" class="nav-link">
 <i class="nav-icon fas fa-table"></i>
                   <p>Invoice</p>
                 </a>
@@ -290,28 +299,28 @@
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
+          <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="mailbox.html" class="nav-link">
+                <a href="../mailbox/mailbox.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inbox</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="compose.html" class="nav-link">
+                <a href="../mailbox/compose.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Compose</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="read-mail.html" class="nav-link">
+                <a href="../mailbox/read-mail.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Read</p>
                 </a>
               </li>
             </ul>
           </li>
-    
+
  
         </ul>
       </nav>
@@ -319,6 +328,8 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -326,12 +337,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Compose</h1>
+            <h1>Add Area</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Compose</li>
+              <li class="breadcrumb-item active">Add Area</li>
             </ol>
           </div>
         </div>
@@ -342,192 +353,205 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3">
-            <a href="mailbox.html" class="btn btn-primary btn-block mb-3">Back to Inbox</a>
-
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- jquery validation -->
+   
+          
+     
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Folders</h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
-                  </button>
-                </div>
+                <h3 class="card-title">DataTable with default features</h3>
               </div>
-              <div class="card-body p-0">
-                <ul class="nav nav-pills flex-column">
-                  <li class="nav-item active">
-                    <a href="#" class="nav-link">
-                      <i class="fas fa-inbox"></i> Inbox
-                      <span class="badge bg-primary float-right">12</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-envelope"></i> Sent
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-file-alt"></i> Drafts
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="fas fa-filter"></i> Junk
-                      <span class="badge bg-warning float-right">65</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-trash-alt"></i> Trash
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Labels</h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body p-0">
-                <ul class="nav nav-pills flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="far fa-circle text-danger"></i> Important</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="far fa-circle text-warning"></i> Promotions</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="far fa-circle text-primary"></i> Social</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
-          <div class="col-md-9">
-            <div class="card card-primary card-outline">
-              <div class="card-header">
-                <h3 class="card-title">Compose New Message</h3>
+                                       
                                <div class="container">
-    <div class="row">
-    <div class="col-md-3">
-         <div class="input-group input-group-sm">
-           
-                       <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
-                    <option selected="selected">Roll No.</option>
-                    <option>All</option>
-                    <option>1</option>
-                   
-                  </select>
-        
+                                    <div class="row">
+                             <div class="col-md-4">
+                      <div class="form-group">
+                  <label>Payment Type</label>
+                  <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+                         <option selected="selected">All</option> 
+                    <option>Due Sheet</option>
+                    <option>Payment Sheet</option>
                
-        </div>
-    </div>   
-    <div class="col-md-3">
-           <div class="input-group input-group-sm">
-        <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
-                      <option selected="selected">Student</option>
-                    <option>All</option>
-                    <option>Student Name</option>
                   </select>
-         
-        </div>
-    </div> 
-    <div class="col-md-3">
-         <div class="input-group input-group-sm">
-          <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
-                     <option selected="selected">Class</option>
-                    <option>All</option>
-                    <option>Class</option>
+                </div>
+              </div>             
+              <div class="col-md-4">
+                      <div class="form-group">
+                  <label>Select Duration</label>
+                  <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+                         <option selected="selected">All</option> 
+                    <option>Today</option>
+                    <option>Last 7 Days</option>
+                    <option>Last 30 days </option>
+                    <option>Last 1 year </option>
+                  
                   </select>
-        
-        </div>  
-    </div>
-  
-</div>                
-</div>
-              </div>
+                         
+                </div>
+                                        </div>           
+                                        <div class="col-md-2">
+                      <div class="form-group">
+                  <label>From Date:</label>
+ 
+                  <input type="date" class="form-control"style="width: 100%;">
+                         
+                </div>
+                                        </div>           
+                                        <div class="col-md-2">
+                      <div class="form-group">
+                  <label>To Date:</label>
+              
+                  <input type="date" class="form-control"style="width: 100%;">
+                         
+                </div>
+                                        </div>       
+                         
+                     
+                                          
+                            
+                                  
+                                      
+                 </div>
+ </div>  
+                          
+                           <div class="container">
+                                    <div class="row">
+                             <div class="col-md-4">
+                      <div class="form-group">
+                  <label>Class </label>
+                  <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+                   <option selected="selected">All</option> 
+                    <option>Alaska</option>
+                    <option>California</option>
+                    <option>Delaware</option>
+                    <option>Tennessee</option>
+                    <option>Texas</option>
+                    <option>Washington</option>
+                  </select>
+                </div>
+              </div>             
+              <div class="col-md-4">
+                      <div class="form-group">
+                  <label>Section</label>
+                  <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+                      <option selected="selected">All</option> 
+                    <option>Alaska</option>
+                    <option>California</option>
+                    <option>Delaware</option>
+                    <option>Tennessee</option>
+                    <option>Texas</option>
+                    <option>Washington</option>
+                  </select>
+                         
+                </div>
+                                        </div>       
+                                        <div class="col-md-2">
+                      <div class="form-group">
+                  <label>Student</label>
+                  <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+                    <option selected="selected">All</option> 
+                    <option>Alaska</option>
+                    <option>California</option>
+                    <option>Delaware</option>
+                    <option>Tennessee</option>
+                    <option>Texas</option>
+                    <option>Washington</option>
+                  </select>
+                         
+                </div>
+                                        </div>    
+                     
+                                        
+                                        <div class="col-md-2">
+                      <div class="form-group">
+              <button class="btn btn-primary form-control" type="submit" style="margin-top: 30px">Search</button>
                 
+                         
+                </div>
+                                        </div>          
+                            
+                                  
+                                      
+                 </div>
+ </div>
+              </div>
+              </div>
               <!-- /.card-header -->
+              
               <div class="card-body">
-                <div class="form-group">
-                  <input class="form-control" placeholder="To:">
-                </div>
-                <div class="form-group">
-                  <input class="form-control" placeholder="Subject:">
-                </div>
-                <div class="form-group">
-                    <textarea id="compose-textarea" class="form-control" style="height: 300px">
-                      <h1><u>Heading Of Message</u></h1>
-                      <h4>Subheading</h4>
-                      <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
-                        was born and I will give you a complete account of the system, and expound the actual teachings
-                        of the great explorer of the truth, the master-builder of human happiness. No one rejects,
-                        dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know
-                        how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again
-                        is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain,
-                        but because occasionally circumstances occur in which toil and pain can procure him some great
-                        pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise,
-                        except to obtain some advantage from it? But who has any right to find fault with a man who
-                        chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
-                        produces no resultant pleasure? On the other hand, we denounce with righteous indignation and
-                        dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so
-                        blinded by desire, that they cannot foresee</p>
-                      <ul>
-                        <li>List item one</li>
-                        <li>List item two</li>
-                        <li>List item three</li>
-                        <li>List item four</li>
-                      </ul>
-                      <p>Thank you,</p>
-                      <p>John Doe</p>
-                    </textarea>
-                </div>
-                <div class="form-group">
-                  <div class="btn btn-default btn-file">
-                    <i class="fas fa-paperclip"></i> Attachment
-                    <input type="file" name="attachment">
+                     <input type="button" value="Create PDF" 
+            id="btPrint" onclick="createPDF()" />
+                  <div  id="tab">
+                <table id="example" class="display" class="table table-bordered table-striped">
+                   
+                  <thead>
+                  <tr>
+                    <th>Student Id </th>
+                    <th>Name/Father Name</th>
+                    
+                    <th>Mobile no.</th>  
+                      <th>Address</th>
+                    <th>Whatsapp no.</th>  
+                      <th>Mail id</th> 
+                      <th>Dues</th>
+                  
+                   
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>tanu
+                    </td>
+                    <td>12234</td>
+                    <td>ggg</td> <td>ggg</td>
+                    <td>X</td>  
+                      <td>kanpur</td>  
+                        
+                     
+                  </tr>
+
+               <tr>
+                    <td>1</td>
+                    <td>tanu
+                    </td>
+                    <td>12234</td>
+                    <td>ggg</td>
+                    <td>X</td>     <td>X</td>  
+                      <td>kanpur</td>  
+                      
+                 
+                      </tr>
+                  </tbody>
+       
+                </table>
                   </div>
-                  <p class="help-block">Max. 32MB</p>
-                </div>
-              </div>
+         
               <!-- /.card-body -->
-              <div class="card-footer">
-                <div class="float-right">
-                  <button type="button" class="btn btn-default"><i class="fas fa-pencil-alt"></i> Draft</button>
-                  <button type="submit" class="btn btn-primary"><i class="far fa-envelope"></i> Send</button>
-                </div>
-                <button type="reset" class="btn btn-default"><i class="fas fa-times"></i> Discard</button>
-              </div>
-              <!-- /.card-footer -->
             </div>
             <!-- /.card -->
+            </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+          <div class="col-md-6">
+
           </div>
-          <!-- /.col -->
+          <!--/.col (right) -->
         </div>
         <!-- /.row -->
-      </div><!-- /.container-fluid -->
+      <!-- /.container-fluid -->
+
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-   
+
     </div>
-    <strong>Copyright &copy; <a href="#">Skyevo.in</a>.</strong> All rights
+    <strong>Copyright &copy; <a href="http://adminlte.io">Skyevo.in </a>.</strong> All rights
     reserved.
   </footer>
 
@@ -536,25 +560,94 @@
     <!-- Control sidebar content goes here -->
   </aside>
   <!-- /.control-sidebar -->
-</div>
+    
+    </div>
 <!-- ./wrapper -->
 
+<!-- jQuery -->
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css" rel="stylesheet" />
+
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+        
+<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-<!-- Summernote -->
-<script src="../../plugins/summernote/summernote-bs4.min.js"></script>
-<!-- Page Script -->
+    <script src="../../dist/js/table.js"></script>
+    <script>
+    $(document).ready(function(){
+  var table = $('#example').DataTable();
+  
+  $('#btn-export').on('click', function(){
+      $('<table>').append(table.$('tr').clone()).table2excel({
+          exclude: ".excludeThisClass",
+          name: "Worksheet Name",
+          filename: "SomeFile" //do not include extension
+      });
+  });      
+})
+    </script>
+<!-- page script -->
 <script>
   $(function () {
-    //Add text editor
-    $('#compose-textarea').summernote()
-  })
+    $("#example1").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+    });
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+    </script>
+<script>
+ $('#example').dataTable({
+               
+                dom: 'Bfrtip',
+                buttons: [
+                    {
+                        extend: 'excelHtml5',
+                        title: 'Excel',
+                        text:'Export to excel'
+                        //Columns to export
+                        //exportOptions: {
+                       //     columns: [0, 1, 2, 3,4,5,6]
+                       // }
+                    },
+                    {
+                        extend: 'pdfHtml5',
+                        title: 'PDF',
+                        text: 'Export to PDF'
+                        //Columns to export
+                        //exportOptions: {
+                       //     columns: [0, 1, 2, 3, 4, 5, 6]
+                      //  }
+                    }
+                ]
+            });
 </script>
+
+
+
 </body>
 </html>
