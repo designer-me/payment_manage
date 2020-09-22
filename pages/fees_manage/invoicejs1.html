@@ -141,7 +141,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="../../index2.html" class="brand-link">
+    <a href="index3.html" class="brand-link">
 <!--
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
@@ -427,7 +427,7 @@
               <div class="row">
                 <div class="col-12">
                   <h4>
-                    <i class="fas fa-globe"></i> Payment management system,
+                    <i class="fas fa-globe"></i> Fees management system,
                     <small class="float-right">Date: 2/10/2014</small>
                   </h4>
                 </div>
@@ -448,6 +448,7 @@
                 <!-- /.col -->
                 <div class="col-sm-4 invoice-col">
                   To
+                
                   <address>
                     <strong>John Doe</strong><br>
                     795 Folsom Ave, Suite 600<br>
@@ -458,9 +459,11 @@
                 </div>
                 <!-- /.col -->
                 <div class="col-sm-4 invoice-col">
+           
+                    
                   <b>Invoice #007612</b><br>
                   <br>
-                  <b>Order ID:</b> 4F3S8J<br>
+                  <b>Invoice ID:</b> 4F3S8J<br>
                   <b>Payment Due:</b> 2/22/2014<br>
                   <b>Account:</b> 968-34567
                 </div>
@@ -470,102 +473,112 @@
 
               <!-- Table row -->
               <div class="row">
-                <div class="col-12 table-responsive">
-                  <table class="table table-striped">
-                    <thead>
-                    <tr>
-                      <th>Student Name</th>
-                      <th>Class</th>
-                      <th>Month</th>
-                      <th>Price</th>
-                      <th>Amount</th>
+              <div class="container">
+                          <div class="card-body">
+                  <div class="container">
+                  <div class="row mx-md-n5">
+                      <div class="col-md-1"></div>
+   <div class="col-md-3"><b>Class</b></div>
+    <div class="col-md-3"><b>Section</b></div> 
+    <div class="col-md-2"><b>Student Name</b></div> 
+    <div class="col-md-3"><b>School Year</b></div>
 
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                      <td><input type="text"/></td>
-                      <td><input type="text"/></td>
-                        <td>       <div class="form-group">
-                 
-                  <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
-                    <option selected="selected">Januray</option>
-                    <option>February</option>
-                    <option>March</option>
-                    <option>April</option>
-                    <option>May</option>
-                    <option>June</option>
-                    <option>July</option>
-                      <option>August</option>
-                    <option>September</option>
-                    <option>October</option>
-                    <option>November</option> 
-                    <option>December</option>
-                  </select>
-                         
-                </div></td>
-                      <td><input type="text"/></td>
-                      <td><input type="text"/></td>
-                     <td><input type="text"/></td>
-                    </tr>
-              
-         
-              
-                    </tbody>
-                  </table>
-                </div>
+</div>                
+                      <div class="row mx-md-n5" style="border: 1px solid black; ">
+                      <div class="col-md-1"></div>
+   <div class="col-md-3"><b> 
+       <p>12th</p>
+       </b></div>
+    <div class="col-md-3"><b>     
+       A
+        </b></div> 
+    <div class="col-md-2"><b>    
+      Abc
+        </b></div> 
+    <div class="col-md-3"><b>  
+       2020-21
+        </b></div>
+-
+</div>
+                  </div>
+
+               
+          </div>
+  <div class="row clearfix">
+    <div class="col-md-12">
+      <table class="table table-bordered table-hover" id="tab_logic">
+        <thead>
+          <tr>
+            <th class="text-center"> # </th>
+            <th class="text-center"> Fee Type</th>
+            <th class="text-center"> Fee Description </th>
+            <th class="text-center"> Fee Amount </th>
+            <th class="text-center"> Total </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id='addr0'>
+            <td>1</td>
+            <td>Lab Fees</td>
+              <td>Scince Lab fee</td>
+           
+            <td>Rs. 50</td>
+            <td>Rs. 50</td>
+          </tr>
+          <tr id='addr1'></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row clearfix" style="margin-top:20px">
+    <div class="pull-right col-md-4">
+      <table class="table table-bordered table-hover" id="tab_logic_total">
+        <tbody>
+          <tr>
+            <th class="text-center">Sub Total</th>
+            <td class="text-center">Rs. 100</td>
+          </tr>
+            <tr>
+            <th class="text-center">Discount</th>
+            <td class="text-center">Rs. 0</td>
+          </tr>
+          <tr>
+            <th class="text-center">Tax</th>
+            <td class="text-center"><div class="input-group mb-2 mb-sm-0">
+              10
+                <div class="input-group-addon">%</div>
+              </div></td>
+          </tr>
+          <tr>
+            <th class="text-center">Tax Amount</th>
+            <td class="text-center">Rs. 100</td>
+          </tr>
+          <tr>
+            <th class="text-center">Grand Total</th>
+            <td class="text-center">Rs. 200</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
                 <!-- /.col -->
               </div>
               <!-- /.row -->
 
-              <div class="row">
-                <!-- accepted payments column -->
-                <div class="col-6">
-                  <p class="lead">Payment Methods:</p>
-                  <img src="../../dist/img/credit/visa.png" alt="Visa">
-                  <img src="../../dist/img/credit/mastercard.png" alt="Mastercard">
-                  <img src="../../dist/img/credit/american-express.png" alt="American Express">
-                  <img src="../../dist/img/credit/paypal2.png" alt="Paypal">
-
-                  <p class="text-muted well well-sm shadow-none" style="margin-top: 10px;">
-                   
-                  </p>
-                </div>
-                <!-- /.col -->
-                <div class="col-6">
-                  <p class="lead">Amount Due 2/22/2014</p>
-
-                  <div class="table-responsive">
-                    <table class="table">
-                      <tr>
-                        <th style="width:50%">Subtotal:</th>
-                            <td><input type="text"/></td>
-                      </tr>
-                      <tr>
-                        <th>Tax (9.3%)</th>
-                      <td><input type="text"/></td>
-                      </tr>
-                 
-                      <tr>
-                        <th>Total:</th>
-                           <td><input type="text"/></td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                <!-- /.col -->
-              </div>
+          
               <!-- /.row -->
 
               <!-- this row will not appear when printing -->
               <div class="row no-print">
                 <div class="col-12">
-                  <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fas fa-print"></i> Print</a>
-                  <button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Submit
-                    Payment
+                  <a href="invoice-print.html" onclick="window.print()" target="_blank" class="btn btn-default"><i class="fas fa-print"></i> Print</a>
+                  <button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Save Only
+                  
                   </button>
                   <button type="button" class="btn btn-primary float-right" style="margin-right: 5px;">
-                    <i class="fas fa-download"></i> Generate PDF
+                    <i class="fas fa-download"></i> Save to Database
                   </button>
                 </div>
               </div>
@@ -602,5 +615,58 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+    <script>
+    $(document).ready(function(){
+    var i=1;
+    $("#add_row").click(function(){b=i-1;
+      	$('#addr'+i).html($('#addr'+b).html()).find('td:first-child').html(i+1);
+      	$('#tab_logic').append('<tr id="addr'+(i+1)+'"></tr>');
+      	i++; 
+  	});
+    $("#delete_row").click(function(){
+    	if(i>1){
+		$("#addr"+(i-1)).html('');
+		i--;
+		}
+		calc();
+	});
+	
+	$('#tab_logic tbody').on('keyup change',function(){
+		calc();
+	});
+	$('#tax').on('keyup change',function(){
+		calc_total();
+	});
+	
+
+});
+
+function calc()
+{
+	$('#tab_logic tbody tr').each(function(i, element) {
+		var html = $(this).html();
+		if(html!='')
+		{
+			var qty = $(this).find('.qty').val();
+			var price = $(this).find('.price').val();
+			$(this).find('.total').val(qty*price);
+			
+			calc_total();
+		}
+    });
+}
+
+function calc_total()
+{
+	total=0;
+	$('.total').each(function() {
+        total += parseInt($(this).val());
+    });
+	$('#sub_total').val(total.toFixed(2));
+	tax_sum=total/100*$('#tax').val();
+	$('#tax_amount').val(tax_sum.toFixed(2));
+	$('#total_amount').val((tax_sum+total).toFixed(2));
+}
+    </script>
 </body>
 </html>

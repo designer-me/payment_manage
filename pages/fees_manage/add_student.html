@@ -173,7 +173,7 @@ fieldset{
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
 -->
-      <span class="brand-text font-weight-light">Payment Management</span>
+      <span class="brand-text font-weight-light">Fees Management</span>
     </a>
 
     <!-- Sidebar -->
@@ -181,7 +181,7 @@ fieldset{
 <!--       Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+            <img src="../../dist/img/logo.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Admin Name</a>
@@ -189,40 +189,18 @@ fieldset{
       </div>
 
       <!-- Sidebar Menu -->
-       <!-- Sidebar Menu -->
-      <nav class="mt-2">
+<nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            <a href="index2.html" class="nav-link active">
+            <a href="../../index2.html" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
               </p>
             </a>
-<!--
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="./index.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index2.html" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index3.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
-                </a>
-              </li>
-            </ul>
--->
+
           </li>
       
 
@@ -236,41 +214,29 @@ fieldset{
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/fees_manage/class.html" class="nav-link">
+                <a href="class.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Class</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/fees_manage/add_student.html" class="nav-link">
+                <a href="add_student.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Student</p>
                 </a>
                       <li class="nav-item">
-                <a href="pages/fees_manage/view_student.html" class="nav-link">
+                <a href="view_student.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>View Student Details</p>
                 </a>
 
               </li>
-              
-              <li class="nav-item">
-                <a href="pages/fees_manage/fees.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fees</p>
-                </a>
-              </li>
-                 <li class="nav-item">
-                  <a href="pages/fees_manage/report.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Report</p>
-                </a>
-                </li>
+      
             </ul>
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
+             <i class="nav-icon fas fa-paperclip"></i>
               <p>
               TC
                 <i class="fas fa-angle-left right"></i>
@@ -278,13 +244,13 @@ fieldset{
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/fees_manage/tc.html" class="nav-link">
+                <a href="genrate_tc.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Generate TC </p>
                 </a>
               </li>   
                 <li class="nav-item">
-                <a href="pages/fees_manage/custom_tc.html" class="nav-link">
+                <a href="custom_tc.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Custom TC </p>
                 </a>
@@ -292,69 +258,155 @@ fieldset{
         
            
             </ul>
-          </li>
-       <li class="nav-item">
-                <a href="pages/fees_manage/fees.html" class="nav-link">
-<i class="nav-icon fas fa-table"></i>
-                  <p>Fees</p>
-                </a>
-              </li>     
-            <li class="nav-item">
-                <a href="pages/fees_manage/invoice.html" class="nav-link">
-<i class="nav-icon fas fa-table"></i>
-                  <p>Transanction</p>
-                </a>
-                
-              </li>           
-          
-            <li class="nav-item">
-                <a href="pages/fees_manage/recipt.html" class="nav-link">
-<i class="nav-icon fas fa-table"></i>
-                  <p>Invoice</p>
-                </a>
-              </li>
-
-          <li class="nav-item">
-            <a href="pages/calendar.html" class="nav-link">
-              <i class="nav-icon fas fa-calendar-alt"></i>
-              <p>
-                Calendar
-                <span class="badge badge-info right">2</span>
-              </p>
-            </a>
-          </li>
-        
-          <li class="nav-item has-treeview">
+          </li>  
+            <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon far fa-envelope"></i>
+              
+                <i class="nav-icon fas fa-file-invoice-dollar"></i>
               <p>
-                Mailbox
+            Bill
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/mailbox/mailbox.html" class="nav-link">
+                <a href="addfeetype.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Inbox</p>
+                  <p>Add fees Type </p>
+                </a>
+              </li>   
+                <li class="nav-item">
+                <a href="feesmaster.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Fees Master </p>
+                </a>
+              </li>            
+                <li class="nav-item">
+                <a href="feesdiscount.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dsicount Fees </p>
+                </a>
+              </li>
+        
+           
+            </ul>
+          </li>
+                 
+            <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-file-invoice"></i>
+            
+              <p>
+         Invoice
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="invoice_js.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Invoice </p>
+                </a>
+              </li>   
+                <li class="nav-item">
+                <a href="views_invoces.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All inovices </p>
+                </a>
+              </li>            
+    
+        
+           
+            </ul>
+          </li>
+      
+
+                    
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-money-bill-alt"></i>
+            
+              <p>
+        Payment Report
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+             <li class="nav-item">
+                <a href="report.html" class="nav-link">
+                 <i class="nav-icon fas fa-table"></i>
+                  <p>Daybook</p>
+                </a>
+              </li>    
+             
+
+      
+            </ul>
+          </li>      
+       
+        
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+           
+                <i class="nav-icon far fa-comment-dots"></i>
+              <p>
+           Feedback
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../feedback/mailbox.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All Feedback</p>
+                </a>
+              </li>
+       
+              <li class="nav-item">
+                <a href="../feedback/read-mail.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Read Feedback</p>
+                </a>
+              </li>
+            </ul>
+          </li>       
+            <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-envelope"></i>
+              <p>
+               Notice
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../notice/addtemp.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Notice</p>
+                </a>
+              </li>   
+                <li class="nav-item">
+                <a href="../notice/listtemp.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All Notice</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/mailbox/compose.html" class="nav-link">
+                <a href="../notice/viewtemp.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Compose</p>
+                  <p>View Compose</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/mailbox/read-mail.html" class="nav-link">
+                <a href="../notice/read-mail.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Read</p>
+                  <p>Read Notice</p>
                 </a>
               </li>
             </ul>
           </li>
              <li class="nav-item">
-                <a href="pages/customerManagement/invoice.html" class="nav-link">
+                <a href="login.html" class="nav-link">
 <i class="fas fa-sign-out-alt"></i>
                   <p>Logout</p>
                 </a>
@@ -409,19 +461,27 @@ fieldset{
               
                 <div class="form-group">
                     <label for="exampleInputEmail1">Name*</label>
-                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder=" Name">
+                    <input type="text" name="name" class="form-control" pattern="^[A-Za-zÀ-ÿ ,.'-]+$"  id="exampleInputEmail1"  placeholder=" Name" required>
                   </div>  
                     <div class="form-group">
                     <label for="exampleInputEmail1">Father Name*</label>
-                    <input type="text" name="Father Name" class="form-control" id="exampleInputEmail1" placeholder="Father Name">
+                    <input type="text" name="Father Name" class="form-control"  pattern="^[A-Za-zÀ-ÿ ,.'-]+$" id="exampleInputEmail1" placeholder="Father Name" required>
                   </div>  
                     <div class="form-group">
                     <label for="exampleInputEmail1">Mother Name</label>
-                    <input type="text" name="Mother Name" class="form-control" id="exampleInputEmail1" placeholder="Mother Name">
-                  </div>       
+                    <input type="text" name="Mother Name" class="form-control" pattern="^[A-Za-zÀ-ÿ ,.'-]+$"  id="exampleInputEmail1" placeholder="Mother Name" required>
+                  </div>         
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Email id </label>
+                    <input type="email" name="Mother Name" class="form-control" pattern=".+@globex.com" id="exampleInputEmail1" placeholder="a@gmail.com" required>
+                  </div> 
+                        <div class="form-group">
+                    <label for="exampleInputEmail1">Age*</label>
+                    <input type="text" name="date" class="form-control" id="exampleInputEmail1"  pattern="[0-9]+" placeholder="age" required>
+                  </div> 
                     <div class="form-group">
                     <label for="exampleInputEmail1">Date of birth*</label>
-                    <input type="date" name="date" class="form-control" id="exampleInputEmail1" placeholder="Date of birth">
+                    <input type="date" name="date" class="form-control" id="exampleInputEmail1" placeholder="Date of birth"  min="1997-01-01" max="2030-12-31">
                   </div>  
               
 
@@ -436,19 +496,19 @@ fieldset{
               
                 <div class="form-group">
                     <label for="exampleInputEmail1">Admission No*</label>
-                    <input type="text" name="Admission No" class="form-control" id="exampleInputEmail1" placeholder="Admission No">
+                    <input type="text" name="Admission No" class="form-control" id="exampleInputEmail1" placeholder="Admission No" required>
                   </div>  
                     <div class="form-group">
                     <label for="exampleInputEmail1">Roll No.*</label>
-                    <input type="text" name="Roll No" class="form-control" id="exampleInputEmail1" placeholder="Roll No">
+                    <input type="text" name="Roll No" pattern="[0-9]+" class="form-control" id="exampleInputEmail1" placeholder="Roll No" required>
                   </div>  
                     <div class="form-group">
                     <label for="exampleInputEmail1">Contact No.*</label>
-                    <input type="text" name="number" class="form-control" id="exampleInputEmail1" placeholder="Contact No">
+                    <input type="tel" name="number" class="form-control" id="exampleInputEmail1" pattern="^\d{10}$" placeholder="Contact No" required>
                   </div>       
                          <div class="form-group">
                   <label>Class*</label>
-                  <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
+                  <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;" required>
                     <option selected="selected">1</option>
                     <option>2</option>
                     <option>3</option>
@@ -479,19 +539,19 @@ fieldset{
               
                 <div class="form-group">
                     <label for="exampleInputEmail1">Total Fees*</label>
-                    <input type="text" name="text" class="form-control" id="exampleInputEmail1" placeholder="Total Fees">
+                    <input type="text" name="text" class="form-control" id="exampleInputEmail1" pattern="[0-9]+" placeholder="Total Fees" required>
                   </div>  
                     <div class="form-group">
                     <label for="exampleInputEmail1">Advance Fee*</label>
-                    <input type="text" name="text" class="form-control" id="exampleInputEmail1" placeholder="Advance Fee">
+                    <input type="text" name="text" class="form-control" pattern="[0-9]+" id="exampleInputEmail1" placeholder="Advance Fee" required>
                   </div>  
                     <div class="form-group">
                     <label for="exampleInputEmail1">Balance</label>
-                    <input type="text" name="Text" class="form-control" id="exampleInputEmail1" placeholder="Balance">
+                    <input type="text" name="Text" class="form-control" pattern="[0-9]+" id="exampleInputEmail1" placeholder="Balance" required>
                   </div>       
                     <div class="form-group">
                     <label for="exampleInputEmail1">Fee Remark</label>
-                    <input type="text" name="text" class="form-control" id="exampleInputEmail1" placeholder="Fee Remark">
+                    <input type="text" name="text" class="form-control" pattern="[0-9]+" id="exampleInputEmail1" placeholder="Fee Remark" required>
                   </div>  
               
 
@@ -506,7 +566,7 @@ fieldset{
               
                 <div class="form-group">
                     <label for="exampleInputEmail1">Student Address*</label>
-                    <input type="text" name="text" class="form-control" id="exampleInputEmail1" placeholder="Student Address">
+                    <input type="text" name="text" class="form-control" id="exampleInputEmail1" placeholder="Student Address" required>
                   </div>  
 
                 <!-- /.form-group -->
@@ -606,5 +666,6 @@ $(document).ready(function () {
   });
 });
 </script>
+    <script></script>
 </body>
 </html>

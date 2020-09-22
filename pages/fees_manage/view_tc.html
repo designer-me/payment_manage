@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Payment Managment System</title>
+  <title>Fees Management System</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
@@ -25,9 +26,11 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="../../index2.html" class="nav-link">Home</a>
+        <a href="../../index3.html" class="nav-link">Home</a>
       </li>
-   
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
     </ul>
 
     <!-- SEARCH FORM -->
@@ -137,11 +140,10 @@
     </ul>
   </nav>
   <!-- /.navbar -->
-
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="../../index2.html" class="brand-link">
+    <a href="index3.html" class="brand-link">
 <!--
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
@@ -162,7 +164,7 @@
       </div>
 
       <!-- Sidebar Menu -->
- <nav class="mt-2">
+      <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
@@ -392,6 +394,7 @@
     <!-- /.sidebar -->
   </aside>
 
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -399,190 +402,163 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Invoice</h1>
+            <h1>View TC</h1>
           </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Invoice</li>
-            </ol>
+            <div class="col-sm-2"></div>   
+            <div class="col-sm-2"></div>
+          <div class="col-sm-2 float-sm-right">
+           <a href="genrate_tc.html" type="button" class="btn btn-primary">Create New</a>
           </div>
         </div>
       </div><!-- /.container-fluid -->
     </section>
 
+    <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12">
-            <div class="callout callout-info">
-              <h5><i class="fas fa-info"></i> Note:</h5>
-              This page has been enhanced for printing. Click the print button at the bottom of the invoice to test.
-            </div>
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- jquery validation -->
+               <div class="card card-info">
+            <div class="card-header">
+              <h3 class="card-title">View TC</h3>
 
-
-            <!-- Main content -->
-            <div class="invoice p-3 mb-3">
-              <!-- title row -->
-              <div class="row">
-                <div class="col-12">
-                  <h4>
-                    <i class="fas fa-globe"></i> Payment management system,
-                    <small class="float-right">Date: 2/10/2014</small>
-                  </h4>
-                </div>
-                <!-- /.col -->
-              </div>
-              <!-- info row -->
-              <div class="row invoice-info">
-                <div class="col-sm-4 invoice-col">
-                  From
-                  <address>
-                    <strong>School Name.</strong><br>
-                    795 Folsom Ave, Suite 600<br>
-                    San Francisco, CA 94107<br>
-                    Phone: (804) 123-5432<br>
-                    Email: info@almasaeedstudio.com
-                  </address>
-                </div>
-                <!-- /.col -->
-                <div class="col-sm-4 invoice-col">
-                  To
-                  <address>
-                    <strong>John Doe</strong><br>
-                    795 Folsom Ave, Suite 600<br>
-                    San Francisco, CA 94107<br>
-                    Phone: (555) 539-1037<br>
-                    Email: john.doe@example.com
-                  </address>
-                </div>
-                <!-- /.col -->
-                <div class="col-sm-4 invoice-col">
-                  <b>Invoice #007612</b><br>
-                  <br>
-                  <b>Order ID:</b> 4F3S8J<br>
-                  <b>Payment Due:</b> 2/22/2014<br>
-                  <b>Account:</b> 968-34567
-                </div>
-                <!-- /.col -->
-              </div>
-              <!-- /.row -->
-
-              <!-- Table row -->
-              <div class="row">
-                <div class="col-12 table-responsive">
-                  <table class="table table-striped">
-                    <thead>
-                    <tr>
-                      <th>Student Name</th>
-                      <th>Class</th>
-                      <th>Month</th>
-                      <th>Price</th>
-                      <th>Amount</th>
-
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                      <td><input type="text"/></td>
-                      <td><input type="text"/></td>
-                        <td>       <div class="form-group">
-                 
-                  <select class="form-control select2 select2-danger" data-dropdown-css-class="select2-danger" style="width: 100%;">
-                    <option selected="selected">Januray</option>
-                    <option>February</option>
-                    <option>March</option>
-                    <option>April</option>
-                    <option>May</option>
-                    <option>June</option>
-                    <option>July</option>
-                      <option>August</option>
-                    <option>September</option>
-                    <option>October</option>
-                    <option>November</option> 
-                    <option>December</option>
-                  </select>
-                         
-                </div></td>
-                      <td><input type="text"/></td>
-                      <td><input type="text"/></td>
-                     <td><input type="text"/></td>
-                    </tr>
-              
-         
-              
-                    </tbody>
-                  </table>
-                </div>
-                <!-- /.col -->
-              </div>
-              <!-- /.row -->
-
-              <div class="row">
-                <!-- accepted payments column -->
-                <div class="col-6">
-                  <p class="lead">Payment Methods:</p>
-                  <img src="../../dist/img/credit/visa.png" alt="Visa">
-                  <img src="../../dist/img/credit/mastercard.png" alt="Mastercard">
-                  <img src="../../dist/img/credit/american-express.png" alt="American Express">
-                  <img src="../../dist/img/credit/paypal2.png" alt="Paypal">
-
-                  <p class="text-muted well well-sm shadow-none" style="margin-top: 10px;">
-                   
-                  </p>
-                </div>
-                <!-- /.col -->
-                <div class="col-6">
-                  <p class="lead">Amount Due 2/22/2014</p>
-
-                  <div class="table-responsive">
-                    <table class="table">
-                      <tr>
-                        <th style="width:50%">Subtotal:</th>
-                            <td><input type="text"/></td>
-                      </tr>
-                      <tr>
-                        <th>Tax (9.3%)</th>
-                      <td><input type="text"/></td>
-                      </tr>
-                 
-                      <tr>
-                        <th>Total:</th>
-                           <td><input type="text"/></td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                <!-- /.col -->
-              </div>
-              <!-- /.row -->
-
-              <!-- this row will not appear when printing -->
-              <div class="row no-print">
-                <div class="col-12">
-                  <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fas fa-print"></i> Print</a>
-                  <button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Submit
-                    Payment
-                  </button>
-                  <button type="button" class="btn btn-primary float-right" style="margin-right: 5px;">
-                    <i class="fas fa-download"></i> Generate PDF
-                  </button>
-                </div>
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                  <i class="fas fa-minus"></i></button>
               </div>
             </div>
-            <!-- /.invoice -->
-          </div><!-- /.col -->
-        </div><!-- /.row -->
+            <div class="card-body p-0">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Student</th> 
+                      <th>Father Name</th> 
+                      <th>Mother Name</th> 
+                      <th>Class Name</th>    
+                    <th>Roll No.</th>
+              <th>Admission No.</th>
+                      <th>Discharge No.</th>
+                      <th>Admission Date</th>
+                      <th>Pass/fail</th>                 
+                      <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>Abc</td>
+                    <td>Lucknow</td>   
+                      <td>Pending</td>    
+                      <td>Pending</td>    
+                      <td>Pending</td>    
+                      <td>Pending</td>    
+                      <td>Pending</td>   
+                      <td>Pending</td> 
+                      <td>Pending</td>
+                    <td class="text-right py-0 align-middle">
+                      <div class="btn-group btn-group-sm">
+                        <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-edit"></i></a>
+                        <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                      </div>
+                    </td>
+                  <tr>
+                   <td>Abc</td>
+                    <td>Lucknow</td>
+                       <td>Approve</td>
+                        <td>Pending</td>    
+                      <td>Pending</td>    
+                      <td>Pending</td>    
+                      <td>Pending</td>    
+                      <td>Pending</td>   
+                      <td>Pending</td> 
+                    <td class="text-right py-0 align-middle">
+                      <div class="btn-group btn-group-sm">
+                        <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-edit"></i></a>
+                        <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                      </div>
+                    </td>
+                  <tr>
+                      <td>Abc</td>
+                    <td>Lucknow</td>
+                          <td>Pending</td>    
+                      <td>Pending</td>    
+                      <td>Pending</td>    
+                      <td>Pending</td>    
+                      <td>Pending</td>   
+                      <td>Pending</td> 
+                      <td>Pending</td>
+                    <td class="text-right py-0 align-middle">
+                      <div class="btn-group btn-group-sm">
+                        <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-edit"></i></a>
+                        <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                      </div>
+                    </td>
+                  <tr>
+                       <td>Abc</td>
+                    <td>Lucknow</td>
+                        <td>Pending</td>    
+                      <td>Pending</td>    
+                      <td>Pending</td>    
+                      <td>Pending</td>    
+                      <td>Pending</td>   
+                      <td>Pending</td> 
+                      <td>Pending</td>
+                    <td class="text-right py-0 align-middle">
+                      <div class="btn-group btn-group-sm">
+                        <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a> 
+                          <a href="#" class="btn btn-primary"><i class="fas fa-edit"></i></a>
+                        <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                      </div>
+                    </td>
+                  <tr>
+                      <td>Abc</td>
+                    <td>Lucknow</td>
+                       <td>Pending</td>    
+                      <td>Pending</td>    
+                      <td>Pending</td>    
+                      <td>Pending</td>    
+                      <td>Pending</td>   
+                      <td>Pending</td> 
+                      <td>Pending</td>
+                    <td class="text-right py-0 align-middle">
+                      <div class="btn-group btn-group-sm">
+                        <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-edit"></i></a>
+                        <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                      </div>
+                    </td>
+
+                </tbody>
+              </table>
+            </div>
+            <!-- /.card-body -->
+          </div>
+            <!-- /.card -->
+            </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+          <div class="col-md-6">
+
+          </div>
+          <!--/.col (right) -->
+        </div>
+        <!-- /.row -->
       </div><!-- /.container-fluid -->
+          
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer no-print">
+  <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-   
+
     </div>
-    <strong>Copyright &copy; <a href="#">Payment Management System</a>.</strong> All rights
+    <strong>Copyright &copy; <a href="http://adminlte.io">Skyevo.in </a>.</strong> All rights
     reserved.
   </footer>
 
@@ -598,9 +574,58 @@
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- jquery-validation -->
+<script src="../../plugins/jquery-validation/jquery.validate.min.js"></script>
+<script src="../../plugins/jquery-validation/additional-methods.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+  $.validator.setDefaults({
+    submitHandler: function () {
+      alert( "Form successful submitted!" );
+    }
+  });
+  $('#quickForm').validate({
+    rules: {
+      email: {
+        required: true,
+        email: true,
+      },
+      password: {
+        required: true,
+        minlength: 5
+      },
+      terms: {
+        required: true
+      },
+    },
+    messages: {
+      email: {
+        required: "Please enter a email address",
+        email: "Please enter a vaild email address"
+      },
+      password: {
+        required: "Please provide a password",
+        minlength: "Your password must be at least 5 characters long"
+      },
+      terms: "Please accept our terms"
+    },
+    errorElement: 'span',
+    errorPlacement: function (error, element) {
+      error.addClass('invalid-feedback');
+      element.closest('.form-group').append(error);
+    },
+    highlight: function (element, errorClass, validClass) {
+      $(element).addClass('is-invalid');
+    },
+    unhighlight: function (element, errorClass, validClass) {
+      $(element).removeClass('is-invalid');
+    }
+  });
+});
+</script>
 </body>
 </html>
